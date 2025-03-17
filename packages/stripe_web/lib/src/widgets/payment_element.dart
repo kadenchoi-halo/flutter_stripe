@@ -169,9 +169,6 @@ class PaymentElementState extends State<PaymentElement> {
   final FocusNode _focusNode = FocusNode(debugLabel: 'CardField');
   FocusNode get _effectiveNode => widget.focusNode ?? _focusNode;
 
-  bool _isManuallyFocusing = false; // Track manual focus/blur actions
-  bool _isCurrentlyFocused = false; // Track current focus state
-
   @override
   Widget build(BuildContext context) {
     return Focus(
